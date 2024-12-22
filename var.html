@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let name="MARUF";
+        // console.log(typeof(name));
+
+        // let mob=234234345;
+        // console.log(typeof(mob));
+
+        // let isMarried=false;
+        // console.log(typeof(isMarried));
+
+        // let city=null;
+        // console.log(typeof(city));
+
+        // let pincode;
+        // console.log(typeof(pincode));
+
+        // let my_info={
+        //     name:"Maruf",
+        //     age:30,
+        //     mob:3434656,
+        //     add:"delhi",
+        //     isMarried:false,
+        //     pincode:null
+
+        // }
+        // console.log(my_info.name);//access objest name using dot notation
+        // console.log(my_info.mob+"and address is"+my_info.add);
+        // console.log(my_info['mob']);
+        
+        // function msg(){
+
+        // }
+        // let msg=function(){
+        //     console.log("thanks for visiting");
+        //     console.log(typeof(msg));
+        // }
+        // msg();
+
+        // //array:coolection of continuous data
+
+        // let student=[
+        //     "Prince",
+        //     23454645756,
+        //     "sgdfg@.COM",
+        //     false,
+        //     "delhi",
+        //     34545];
+        //     console.log(student[2]);
+        let student={
+            name:["Maruf","thakur","wedf"],
+            age:30,
+            course:"web",
+            add:{
+                area:"Nehru Place",
+                city:"Delhi",
+                pincode:2343534,
+
+            },
+            getinfo:function(){
+                return this.name[1]+ " and his age is " + this.age
+            },
+            isMarried:false
+        };
+        console.log(student.getinfo());//object with function
+        console.log(student.name[2]);//objest with array
+        console.log(student.add.city);//object with object
+        
+
+
+
+    </script>
+</body>
+</html>
